@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroic Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2d031d, #87084b);
+            color: white;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: black;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%; /* Makes the image circular */
+            border: 2px solid #f50057; /* Optional: Adds a border for styling */
+            object-fit: cover; /* Ensures the image scales properly */
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f50057;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f50057;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            color: #f50057;
+            margin-bottom: 20px;
+        }
+
+        .about-section {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #f50057;
+        }
+
+        .about-section p {
+            font-size: 1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.jpg" alt="Heroic Logo">
+            <span>Heroic</span>
+        </div>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+            <li><a href="voice_control.html">Voice Control</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Dashboard</h1>
+        <div class="about-section">
+            <h2>About Us</h2>
+            <p>Welcome to the Heroic Dashboard. Here, you'll find crucial information and tools to enhance women's safety. Our platform offers various features including emergency contacts, voice control for SOS alerts, real-time location tracking, and a user profile for personalized settings.</p>
+            <p>In case of an emergency, you can quickly access emergency contacts and send SOS alerts with just a few clicks. The voice control feature allows you to activate safety measures hands-free, and our location tracking ensures you can always be located if needed. Keep your profile updated with accurate information to ensure the best safety measures.</p>
+        </div>
+    </div>
+</body>
+</html>

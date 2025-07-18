@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroic Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2d031d, #87084b);
+            color: white;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: black;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f50057;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f50057;
+        }
+
+        .profile-content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .profile-card {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .profile-card img {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            border: 3px solid #f50057;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .profile-card h1 {
+            font-size: 2rem;
+            color: #f50057;
+            margin-bottom: 10px;
+        }
+
+        .profile-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .profile-card p span {
+            font-weight: bold;
+            color: #f50057;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.jpg" alt="Heroic Logo">
+            <span>Heroic</span>
+        </div>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+            <li><a href="voice_control.html">Voice Control</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="profile-content">
+        <div class="profile-card">
+            <img src="women.png" alt="Profile Image">
+            <h1>Priya</h1>
+            <p><span>Email:</span> abc@gmail.com</p>
+            <p><span>Phone:</span> 1234567890</p>
+            <p><span>Location:</span> Coimbatore, Tamil Nadu</p>
+            <p><span>Alternate Phone 1:</span> 4563217825</p>
+            <p><span>Alternate Phone 2:</span> 879456210</p>
+        </div>
+    </div>
+</body>
+</html>

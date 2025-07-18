@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Heroic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2d031d, #87084b);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            font-size: 2rem;
+            color: #f50057;
+            margin-bottom: 20px;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .login-container input[type="submit"] {
+            background: #f50057;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background: #d4004c;
+        }
+
+        .login-container a {
+            color: #f50057;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <a href="#">Forgot Password?</a>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            window.location.href = "dashboard.html"; // Redirect to dashboard.html
+        });
+    </script>
+</body>
+</html>
